@@ -1,8 +1,10 @@
 ### This is my sandbox learning/exploring how to write automated tests for React app.
 ---
 
-| --- | --- |  
-| 1.  | test|
+|col1  |col2 |
+|:----|----:|  
+| 1. |test|
+| 2. |test|
 
 Technology used:
 - react-testing-library 
