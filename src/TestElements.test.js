@@ -1,12 +1,12 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import TestElements from "./components/TestElements";
-// import '@testing-library/jest-dom/extend-expect'; 
+import '@testing-library/jest-dom/extend-expect'; 
 
 
 afterEach(cleanup);
 
-it("should equal to 0", () => {
+it("counter should equal to 0", () => {
     const { getByTestId } = render(<TestElements />);
     expect(getByTestId('counter')).toHaveTextContent(0);
 }); // end it();
