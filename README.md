@@ -15,7 +15,7 @@ Technology used:
 
 > Note to Self:
 >1. test file are those with extension `.test.js`
->1. include below import statement in every `.test.js` file
+>1. could include below import statement in every `.test.js` file
 >1. better to include import statement once in the `setupTests.js` file within the same directory as `.test.js` files
 >    ```js
 >    import '@testing-library/jest-dom/extend-expect';
