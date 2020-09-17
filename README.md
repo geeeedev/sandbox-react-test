@@ -7,12 +7,10 @@ Credit:
 Technology used:
 - react-testing-library 
 - [jest-dom](https://github.com/testing-library/jest-dom)
-
 &nbsp;
 &nbsp; 
 &nbsp;
 &nbsp;  
-
 > Note to Self:
 >1. test file are those with extension `.test.js`
 >1. could include below import statement in every `.test.js` file
@@ -20,3 +18,7 @@ Technology used:
 >    ```js
 >    import '@testing-library/jest-dom/extend-expect';
 >    ```
+
+Common Troubleshoot:
+- <err msg>
+    - cause
