@@ -6,7 +6,7 @@ const TestAsync = () => {
   const delayCount = () => (
     setTimeout(() => {
       setCounter(counter + 1)
-    }, 2500)  //500
+    }, 2500)  //500 - 0.5 sec original test
   )
   
 return (
@@ -14,7 +14,7 @@ return (
     <h1 data-testid="counter">{ counter }</h1>
     <button data-testid="button-up" onClick={delayCount}> Up</button>
     <button data-testid="button-down" onClick={() => setCounter(counter - 1)}>Down</button>
- </>
+  </>
     )
   }
   
