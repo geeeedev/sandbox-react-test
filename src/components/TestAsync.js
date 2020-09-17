@@ -6,7 +6,7 @@ const TestAsync = () => {
   const delayCount = () => (
     setTimeout(() => {
       setCounter(counter + 1)
-    }, 500)
+    }, 2500)  //500
   )
   
 return (
