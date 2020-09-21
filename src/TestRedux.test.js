@@ -6,7 +6,8 @@ import { initialState, reducer } from './store/reducer';
 import TestRedux from './components/TestRedux';
 import "@testing-library/jest-dom/extend-expect";
 
-const renderWithRedux = (
+// create this helper function, naming it whatever we want - renderWithRedux
+const renderWithRedux = (   
     component, 
     { initialState, store = createStore(reducer, initialState) } = {}) => {
         return {
@@ -28,4 +29,8 @@ it('Test increment the counter through redux', ()=>{
     expect(getByTestId('counter')).toHaveTextContent('6');
 })
 
-
+it('Test decrement the counter through redux', ()=>{
+    const {getByTestId} = renderWithRedux(<TestRedux />,{initialState: {count:100}});
+    fireEvent.click(getByTestId('button-down'));
+    expect(getByTestId('counter')).toHaveTextContent('99');
+})
