@@ -21,3 +21,11 @@ it('Checks initial state is equal to 0', () => {
     const { getByTestId } = renderWithRedux(<TestRedux />);
     expect(getByTestId('counter')).toHaveTextContent('0');
 })
+
+it('Test increment the counter through redux', ()=>{
+    const {getByTestId} = renderWithRedux(<TestRedux />,{initialState: {count:5}});
+    fireEvent.click(getByTestId('button-up'));
+    expect(getByTestId('counter')).toHaveTextContent('6');
+})
+
+
