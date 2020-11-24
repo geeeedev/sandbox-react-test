@@ -30,5 +30,5 @@ Common Troubleshoot:
   - cause
 
 
-> **Note2Self: got to/finished redux....continue to 6-Context, 7-Router, 8-Axios**  
+> **Note2Self: continue to 8-Axios**  
 [continue on ... ](https://www.freecodecamp.org/news/8-simple-steps-to-start-testing-react-apps-using-react-testing-library-and-jest/)
